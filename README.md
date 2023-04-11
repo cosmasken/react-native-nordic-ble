@@ -2,7 +2,7 @@
 
 A starter for the React Native library written in TypeScript, with linked example project and optional native code written in Swift and Kotlin. This project aims to support the latest React Native versions and keep best practices in mind.
 
-Are you looking for the project template? Check [react-native-better-template](https://github.com/demchenkoalex/react-native-better-template).
+Are you looking for the project template? Check [react-native-better-template](https://github.com/cosmasken/react-native-better-template).
 
 ## Alternatives
 
@@ -38,7 +38,7 @@ This will invoke rename script, which removes all references to the template and
 - Use `kebab-case` for the library name, _preferably_ with `react-native` prefix (e.g. `react-native-blue-button`, blue-button, button).
 - Use `PascalCase` for the library short name (in case you will have native code, with `js-only` argument script will not ask for this), it is used in native projects (RNModuleTemplate.xcodeproj, RNModuleTemplatePackage.kt etc.). If you prefixed your library name with `react-native` use prefix `RN` for the short name (e.g. `RNBlueButton`, BlueButton, Button).
 - Library homepage is used only in `package.json`, if you are not sure, you can press enter to skip this step and modify this field later. Library git url is used only in `.podspec` file, same as above (note that this file will be removed if you pass `js-only` argument).
-- Please don't use any special characters in author name since it is a part of Android package name, (e.g. `com.alexdemchenko.reactnativemoduletemplate`) and used in Kotlin and other files. Android package name is generated from author name (with removed spaces and lowercased) and library name (with removed dashes).
+- Please don't use any special characters in author name since it is a part of Android package name, (e.g. `com.cosmasken.reactnativemoduletemplate`) and used in Kotlin and other files. Android package name is generated from author name (with removed spaces and lowercased) and library name (with removed dashes).
 
 Don't forget to remove the rename script, do `yarn` to install dependencies in root and example folders, and, if you kept native code, do `pod install` in `example/ios`.
 
@@ -66,7 +66,7 @@ implementation project(':react-native-module-template')
 In `example/android/app/src/main/java/com/example/MainApplication.kt` remove
 
 ```kotlin
-import com.alexdemchenko.reactnativemoduletemplate.RNModuleTemplatePackage
+import com.cosmasken.reactnativemoduletemplate.RNModuleTemplatePackage
 
 packages.add(RNModuleTemplatePackage())
 ```
